@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Kaçan buton</title>
+</head>
+<body>
+    <input type="button" value="Tamam" id="but" onClick="javascript:basardin()" onmouseover="javascript:kac()" style="position: absolute;">
+    <script>
+        function kac() {
+            document.getElementById('but').style.top=Math.floor(Math.random()*200) + "px";
+            document.getElementById('but').style.left=Math.floor(Math.random()*200) + "px";
+        }
+        function basardin() {
+            alert("Sen Kazandın");
+        }
+    </script>
+</body>
+</html>

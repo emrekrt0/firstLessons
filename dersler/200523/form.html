@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body> 
+<form action="register2.php" method="post">
+<table bgcolor="lightgreen" cellspacing="0" cellpadding="10">    
+    <tr> 
+        <td>Email</td>
+        <td>:</td>
+        <td align="center"><input type="text" name="email" id="email" maxlength="200" placeholder="Email Adresiniz"></td> 
+    </tr>
+    <tr>
+        <td>Şifreniz </td>
+        <td>:</td>
+        <td align="center"><input type="password" name="sifre" id="sifre" maxlength="200" placeholder="Şifreniz"> </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td><input type="button" value="Gönder" name="giris" id="giris"></td>
+    </tr>    
+</table>
+</form> <hr><br>
+5+5 işleminin sonucu kaçtır? <br>
+<form action="sorular.php" method="post">
+<input type="radio" name="cevap1" value="a"> a) 5 <br>
+<input type="radio" name="cevap1" value="b"> b) 10 <br>
+<input type="radio" name="cevap1" value="c"> c) 15 <br>
+<input type="radio" name="cevap1" value="d"> d) 35 <br><hr><br>
+</form>
+
+Hobileriniz <br>
+<form action="sorular2.php" method="post">
+<input type="checkbox" name="cevap1" value="sinema"> Sinema <br>
+<input type="checkbox" name="cevap2" value="muzik"> Müzik <br>
+<input type="checkbox" name="cevap3" value="dans"> Dans <br>
+<input type="checkbox" name="cevap4" value="gezi"> Gezi <br>
+</form> <br><hr><br>
+
+Renk Seçiniz: <br>
+<form action="renk.php" method="post">
+<input type="color" name="renk" value="#FFFFFF"> <br>
+</form> <br><hr><br>
+
+Tarih Seçiniz: <br>
+<form action="tarih.php" method="post">
+<input type="date" name="tarih" id="tarih"> <br>
+</form><br> <hr><br>
+
+Aralık Seçiniz: <br>
+<form action="range.php" method="post">
+<input type="range" name="ses" id="ses" min="0" max="15" value="1"> <br>
+</form> <br><hr><br>
+
+Profil Resmi Seçiniz: <br>
+<form action="profil.php" method="post">
+<input type="file" name="avatar" id="avatar"> <br>
+</form><br> <hr><br>
+
+<form action="hidden.php" method="post">
+<input type="hidden" name="hidden" id="hidden" value="1001"> <br> <!-- Ekranda form öğesi görünmez ama form gönderildiğinde referans=1001 değeri form ile birlikte gönderilecektir.-->
+</form> <br><hr><br>
+
+Seçim Yapınız: <br>
+<form action="secim.php" method="post">
+    <select name="kategori" id="kategori">
+        <option value="1">Elektronik</option>
+        <option value="2">Tekstil</option>
+        <option value="3">Oto</option>
+        <option value="4" selected>Emlak</option>
+    </select>
+    </form> <br><hr><br>
+
+Metni Giriniz: <br>
+<form action="metin.php" method="post">
+    <textarea name="mesaj" id="mesaj" cols="50" rows="5"></textarea> <br>
+    </form><br><hr><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

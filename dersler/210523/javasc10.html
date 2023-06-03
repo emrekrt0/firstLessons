@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Renk degistir</title>
+</head>
+<body>
+    <h1 id="baslikYeri">Bir işi, yapan bilir.</h1>
+    <input type="button" value="Kırmızı Yap" onclick="javascript:kirmizi()">
+    <input type="button" value="Mavi Yap" onclick="javascript:mavi()">
+    <input type="button" value="Sarı Yap" onclick="javascript:sari()">
+    <script>
+        function kirmizi() {
+            document.getElementById('baslikYeri').style.color='red';
+        }
+
+        function mavi() {
+            document.getElementById('baslikYeri').style.color='blue';
+        }
+
+        function sari() {
+            document.getElementById('baslikYeri').style.color='yellow';
+        }
+    </script>
+    
+</body>
+</html>

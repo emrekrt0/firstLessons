@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>sayac</title>
+    <style>
+        .sayac {
+            font-size: 40px;
+            color: aquamarine;
+            border: 1px dashed black;
+            border-radius: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <span class="sayac" id="sayacYeri">0</span>
+    <br><br>
+    <input type="button" value="-" onclick="down()">
+    <input type="button" value="Reset" onclick="zero()">
+    <input type="button" value="+" onclick="up()">
+    <script>
+        function up() {
+            var simdikiDeger= parseInt(document.getElementById('sayacYeri').innerHTML); // parseInt komutu Stringer olan veriyi Integer'a çevirir. Toplama işlemi yapmamıza olanak sağlar.
+            document.getElementById('sayacYeri').innerHTML=simdikiDeger+1;
+        }
+        function down() {
+            var simdikiDeger= parseInt(document.getElementById('sayacYeri').innerHTML);
+            document.getElementById('sayacYeri').innerHTML=simdikiDeger-1;
+        }
+        function zero() {
+            document.getElementById('sayacYeri').innerHTML= "0";
+        }
+    </script>
+
+
+</body>
+</html>
