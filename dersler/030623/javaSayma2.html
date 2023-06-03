@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Sayma 2</title>
+</head>
+<body>
+    <h1 id="sayiYeri"></h1>
+    <h1 id="sayiYeri2"></h1>
+    <script>
+        var sayi=0;
+        var sayi2=0;
+        function say1() {
+            sayi=sayi+1;
+            document.getElementById('sayiYeri').innerHTML=sayi;
+        }
+        function say2() {
+            sayi2=sayi2+1;
+            document.getElementById('sayiYeri2').innerHTML=sayi2;
+        }
+        setInterval(say1,100);
+        setInterval(say2,250);
+    </script>
+</body>
+</html>

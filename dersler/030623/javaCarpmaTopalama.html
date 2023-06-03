@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Toplama-Carpma</title>
+</head>
+<body>
+    <form id="form1">
+    Sayı 1: <input type="text" id="sayi1"> <br>
+    Sayı 2: <input type="text" id="sayi2"> <br>
+    <input type="button" value="Topla" onclick="toplama()"> 
+    <input type="button" value="Çarp" onclick="carpma()">
+    <input type="button" value="Bol" onclick="bolme()"> 
+    <input type="button" value="Çıkar" onclick="cikarma()"> 
+    <input type="button" value="Sıfırla" onclick="resetleme()"> <br>
+    Sonuç: <span id="sonucYaz"></span>
+    <script>
+        function toplama()
+        {
+            var sayi1=document.getElementById('sayi1').value;
+            var sayi2=document.getElementById('sayi2').value;
+            if (sayi1=='') {
+                alert('Birinci Sayıyı giriniz')
+                document.getElementById('sayi1').focus();
+            }
+            else if (sayi2=='') {
+                alert('İkinci sayıyı giriniz.')
+                document.getElementById('sayi2').focus();
+            }
+            else { 
+                sayi1=parseInt(sayi1);
+                sayi2=parseInt(sayi2);
+                document.getElementById('sonucYaz').innerHTML=sayi1+sayi2;
+            }
+        }
+        function carpma() {
+            var sayi1=document.getElementById('sayi1').value;
+            var sayi2=document.getElementById('sayi2').value;
+            sayi1=parseInt(sayi1);
+            sayi2=parseInt(sayi2);
+            document.getElementById('sonucYaz').innerHTML=sayi1*sayi2;
+        }
+        function bolme() {
+            var sayi1=document.getElementById('sayi1').value;
+            var sayi2=document.getElementById('sayi2').value;
+            sayi1=parseInt(sayi1);
+            sayi2=parseInt(sayi2);
+            document.getElementById('sonucYaz').innerHTML=sayi1/sayi2;
+
+        }
+        function cikarma() {
+            var sayi1=document.getElementById('sayi1').value;
+            var sayi2=document.getElementById('sayi2').value;
+            sayi1=parseInt(sayi1);
+            sayi2=parseInt(sayi2);
+            document.getElementById('sonucYaz').innerHTML=sayi1-sayi2;
+        }
+        function resetleme() {
+            document.getElementById("Form").innerHTML="";
+
+    }
+    </script>
+    </form>
+</body>
+</html>

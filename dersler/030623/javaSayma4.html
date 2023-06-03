@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Sayma 3 (Disko)</title>
+</head>
+<body id="tumSayfa">
+    <input type="button" value="Değiştir" onclick="fonRengiDegis()"> <br> ya da <br>
+    <input type="text" onkeydown="fonRengiDegis()">
+    <script>
+        function fonRengiDegis() {
+            var r = Math.floor(Math.random()*99);
+            var g = Math.floor(Math.random()*99);
+            var b = Math.floor(Math.random()*99);
+            document.getElementById('tumSayfa').style.backgroundColor='#'+r+g+b;
+        }
+    </script>
+    
+</body>
+</html>
