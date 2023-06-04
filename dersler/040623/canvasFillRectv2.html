@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Canvas fillRect v2</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="300" style="border: 1px solid gray;"></canvas>
+    <script>
+        var myCanvas = document.getElementById('myCanvas');
+        var resim=myCanvas.getContext("2d");
+        resim.moveTo(150,150);
+        for (var i=0;i<300;i++) {
+            for (var k=0;k<5g0;k++) {
+                var r = Math.floor(Math.random()*99);
+                var g = Math.floor(Math.random()*99);
+                var b = Math.floor(Math.random()*99);
+                console.log("#" + r + g + b);
+
+                resim.fillStyle="#" + r + g + b;
+                resim.fillRect(i,i,k,k);
+            }
+        }
+    </script>
+    <br>
+    <input type="button" value="Yenile" onclick="window.location.reload()">
+</body>
+</html>

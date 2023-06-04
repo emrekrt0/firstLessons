@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>LocalStorage</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="yaz()">LS yaz</button>
+    <button onclick="getir()">LS oku</button>
+    <script>
+        function yaz() {
+            localStorage.okulAdi='teknoloji güzel şey'
+        }
+        function getir() {
+            var x = localStorage.getItem('okulAdi');
+            document.getElementById('demo').innerHTML=x;
+        }
+    </script>
+</body>
+</html>

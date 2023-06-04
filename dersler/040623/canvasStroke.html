@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Canvas - Stroke</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="300" style="border: 1px solid gray;"></canvas>
+    <script>
+        var c = document.getElementById('myCanvas');
+        var resim = c.getContext("2d");
+        resim.beginPath();
+        resim.strokeStyle="red";
+        resim.moveTo(20,20); // Çizmeye başlanılacak nokta
+        resim.lineTo(20,280);
+        resim.lineTo(280,280);
+        resim.lineTo(280,20);
+        resim.lineTo(20,20);
+        
+        resim.stroke();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Göster Gizle</title>
+</head>
+<body>
+    <h1>Başlık</h1>
+    <button onClick="gosterGizle()">Göster / Gizle</button>
+    <div id="detayYeri" style="display: none;">Bu div ekranda gözükmez.</div>
+    <script>
+        function gosterGizle() {
+            var e=document.getElementById('detayYeri');
+            if(e.style.display=='none') {
+                e.style.display='block';
+            }
+            else {
+                e.style.display='none';
+            }
+        }
+    </script>
+</body>
+</html>

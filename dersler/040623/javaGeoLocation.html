@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Geo Location</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <input type="button" value="Bul" onclick="getLocation()">
+    <script>
+        var x=document.getElementById('demo');
+        function getLocation() {
+            if (navigator.geolocation) {
+                position=navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            else {
+                x.innerHTML="Geolocation kullanılmaz";
+            }
+        }
+        function showPosition(position) {
+            x.innerHTML="Latitude: " + position.coords.latitude + "<br> Longitude: " + position.coords.longitude;
+        }
+    </script>
+</body>
+</html>
